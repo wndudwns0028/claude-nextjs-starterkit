@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__query-docs",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack --yes)",
+      "Bash(cp -r temp/.gitignore .)",
+      "Bash(cp -r temp/eslint.config.mjs .)",
+      "Bash(cp -r temp/next.config.ts .)",
+      "Bash(cp -r temp/next-env.d.ts .)",
+      "Bash(cp -r temp/package.json .)",
+      "Bash(npm install:*)",
+      "Bash(npx prisma:*)",
+      "Bash(npx shadcn@latest:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:3000)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:3000/sign-in)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:3000/sign-up)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:3000/dashboard)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:3000/not-exist)",
+      "Bash(curl -s -I http://localhost:3000/dashboard)",
+      "Bash(curl -s -X POST http://localhost:3000/api/auth/register -H 'Content-Type: application/json' -d '{\"name\":\"테스트\",\"email\":\"test@example.com\",\"password\":\"password123\"}')",
+      "Bash(python -m json.tool)",
+      "Bash(node:*)",
+      "Bash(ls *.db prisma/*.db)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(taskkill /PID 14144 /F)",
+      "Bash(cmd.exe /c \"taskkill /PID 14144 /F\")",
+      "Bash(cmd.exe /c \"taskkill /F /IM node.exe\")",
+      "Bash(cmd.exe:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001)",
+      "Bash(powershell.exe -Command \"Stop-Process -Id 14144 -Force\")",
+      "Bash(grep -v \"^$\")",
+      "Bash(curl -s -X POST http://localhost:3000/api/auth/register -H 'Content-Type: application/json' -d '{\"name\":\"테스트\",\"email\":\"test2@example.com\",\"password\":\"short\"}')",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:3000/nonexistent)"
+    ]
+  }
+}
